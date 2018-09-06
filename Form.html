@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>PRODUCT REQUEST FORM</title>
+</head>
+<body background="Nature (20).jpg">
+	<style type="text/css">
+#menu{
+ list-style-type: none;
+ margin: 5px;
+ padding: 7px 7px;
+ text-align: center;
+ border: 1px solid #e7c7e7;
+ background-color: lightblue; 
+}
+
+#menu li{
+  display: inline;
+  border-right: 1px solid #bbb;
+}
+
+a:link, a:visited{
+    
+    background-color: black;
+    color: white;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: #808080;
+}
+
+#menu li active {
+background-color: #4CAF50;
+color: white;
+}
+
+body{
+  color: black;
+  text-align: center;
+}
+</style>
+<nav>
+    <ul id="menu">
+      <li><a class="active" href="Home.html">HOME</a></li>
+      <li><a href="Products.html">PRODUCTS</a></li>
+      <li><a href="About Us.html">ABOUT US</a></li>
+      <li><a href="Form.html">FORM</a></li>
+      <li><a href="Contacts.html">CONTACTS</a></li>
+
+     </ul> 
+  </nav>
+
+<form method="post" action="sionearcade@gmail.com">
+<h1 align="center"><u>PRODUCT REQUEST FORM</u></h1>
+<fieldset>
+<legend><h2>ENTER YOUR DETAILS HERE</h2></legend>
+ENTER YOUR FIRST NAME <input type="text" maxlength="100" size="50" id="firstname"><br /><br />
+ENTER YOUR SECOND NAME <input type="text" maxlength="50" size="50" id="secondname"><br /><br />
+ENTER PHONE NUMBER <input type="text" maxlength="50" size="50" id="phone number"><br /><br />
+ENTER EMAIL ADDRESS <input type="text" maxlength="50" size="50" id="emailaddress"><br /><br />
+</fieldset>
+
+
+
+
+<fieldset>
+<legend><h2>ENTER PRODUCT DETAILS HERE</h2></legend>
+ENTER PRODUCT TITLE <input type="text" maxlength="100" size="50" id="propertytitle"><br /><br />
+ENTER PRODUCT ID <input type="text" maxlength="50" size="50" id="propertyID"><br /><br />
+
+</fieldset>
+
+
+
+<fieldset>
+<legend><h2> CHOOSE GENDER</h2></legend>
+<input type="radio" name="gender" />MALE <br /><br />
+<input type="radio" name="gender" />FEMALE <br /><br />
+</fieldset>
+
+<input type="submit" value="Click here to submit your form" />
+</form>
+
+</body>
+</html>
