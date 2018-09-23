@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>PRODUCT REQUEST FORM</title>
+<link rel="stylesheet" type="text/css" href="form.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="form.js"></script>
+<body background="Nature (20).jpg">
+	
+<nav>
+    <ul id="menu">
+      <li><a class="active" href="Home.html">HOME</a></li>
+      <li><a href="Products.html">PRODUCTS</a></li>
+      <li><a href="About Us.html">ABOUT US</a></li>
+      <li><a href="Form.html">FORM</a></li>
+      <li><a href="Contacts.html">CONTACTS</a></li>
+
+     </ul> 
+  </nav>
+
+<form method="post" action="form.php">
+  <div class="alert alert-error"><?php $_SESSION['message']?> </div>
+<h1 align="center"><u>PRODUCT REQUEST FORM</u></h1>
+<fieldset>
+<legend><h2>ENTER YOUR DETAILS HERE</h2></legend>
+ENTER YOUR FIRST NAME *<input type="text" maxlength="100" size="50" name="firstname" required><br /><br />
+ENTER YOUR SECOND NAME <input type="text" maxlength="50" size="50" name="secondname"><br /><br />
+ENTER PHONE NUMBER <input type="text" maxlength="50" size="50" name="phonenumber"><br /><br />
+ENTER EMAIL ADDRESS *<input type="text" maxlength="50" size="50" name="emailaddress" id="email" required> 
+<p id="result"></p> <br /><br />
+</fieldset>
+
+
+
+
+<fieldset>
+<legend><h2>ENTER PRODUCT DETAILS HERE</h2></legend>
+ENTER PRODUCT TITLE *<input type="text" maxlength="100" size="50" id="producttitle" required><br /><br />
+ENTER PRODUCT ID <input type="text" maxlength="50" size="50" id="productID"><br /><br />
+
+</fieldset>
+
+
+
+<fieldset>
+<legend><h2> CHOOSE GENDER</h2></legend>
+<input type="radio" name="gender" value="male" />MALE <br /><br />
+<input type="radio" name="gender" value="female"/>FEMALE <br /><br />
+</fieldset>
+
+<button id="button" type="submit" >Click here to submit your form</button>
+</form>
+
+</body>
+</html>
